@@ -18,12 +18,13 @@ source:
     - cpp_limits.patch
 
 build:
-  number: 5
+  number: 6
 
 requirements:
   build:
     - cmake
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - make   # [unix]
   host:
